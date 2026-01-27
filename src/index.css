@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: max(884px, 100dvh);
+  /* Use solid background to prevent paint smearing */
+  background-color: #f6f7f8;
+  @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(30, 58, 138, 0.05), transparent);
+}
+
+.social-icon-btn {
+  @apply transition-all duration-300 ease-out flex items-center justify-center rounded-full border shadow-md;
+}
+
+.social-icon-btn:hover {
+  @apply -translate-y-1 shadow-xl text-white;
+}
+
+.motion-hint {
+  @apply absolute -top-8 left-1/2 -translate-x-1/2 text-primary/30 flex flex-col items-center pointer-events-none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
