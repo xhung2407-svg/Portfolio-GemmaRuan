@@ -15,7 +15,10 @@ const Research = () => {
                     <div key={index} className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl transition-all duration-300 hover:shadow-2xl">
                         <div
                             className="relative h-[480px] bg-cover bg-center-top transition-transform duration-500 group-hover:scale-105"
-                            style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%), url("${item.image}")`, backgroundPosition: 'center 30%' }}
+                            style={{
+                                backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%), url("${item.image}")`,
+                                backgroundPosition: index === 2 ? 'center 65%' : 'center 30%'
+                            }}
                         >
                             <div className="absolute inset-0 flex flex-col justify-end p-8">
                                 <div className="mb-6">

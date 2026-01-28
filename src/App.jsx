@@ -4,10 +4,12 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import AchievementsDetail from './pages/AchievementsDetail';
 import Research from './pages/Research';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

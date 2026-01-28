@@ -1,12 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const handleScrollToSection = (e, sectionId) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigation = (e, sectionId) => {
     e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Check if we're on the home page
+    if (location.pathname === '/') {
+      // On homepage, just scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // Not on homepage - check if there's a dedicated page for this section
+      if (sectionId === 'achievements') {
+        navigate('/achievements');
+        window.scrollTo(0, 0);
+      } else if (sectionId === 'research') {
+        navigate('/research');
+        window.scrollTo(0, 0);
+      } else {
+        // For sections without dedicated pages (international, scholarship), go to homepage and scroll
+        navigate('/');
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
     }
   };
 
@@ -21,27 +47,27 @@ const Header = () => {
             </Link>
           </div>
           <nav className="flex items-center space-x-4 md:space-x-8">
-            <Link
-              to="/achievements"
-              className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
-            >
-              Achievements
-            </Link>
-            <Link
-              to="/research"
-              className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
-            >
-              Research
-            </Link>
             <a
               className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors cursor-pointer"
-              onClick={(e) => handleScrollToSection(e, 'international')}
+              onClick={(e) => handleNavigation(e, 'achievements')}
+            >
+              Achievements
+            </a>
+            <a
+              className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => handleNavigation(e, 'research')}
+            >
+              Research
+            </a>
+            <a
+              className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => handleNavigation(e, 'international')}
             >
               International
             </a>
             <a
               className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-primary transition-colors cursor-pointer"
-              onClick={(e) => handleScrollToSection(e, 'scholarship')}
+              onClick={(e) => handleNavigation(e, 'scholarship')}
             >
               Scholarship
             </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Achievements = () => {
   const achievements = [
@@ -69,10 +70,10 @@ const Achievements = () => {
                       {achievement.description}
                     </p>
                   </div>
-                  <a className="inline-flex items-center text-primary font-bold text-lg group-hover:underline w-fit cursor-pointer" href={achievement.link || "/achievements"}>
+                  <Link to={achievement.link || "/achievements"} className="inline-flex items-center text-primary font-bold text-lg group-hover:underline w-fit cursor-pointer">
                     View Details
                     <span className="material-symbols-outlined text-xl ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
