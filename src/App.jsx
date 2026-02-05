@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import AchievementsDetail from './pages/AchievementsDetail';
 import Research from './pages/Research';
+import International from './pages/International';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -15,8 +16,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="achievements" element={<AchievementsDetail />} />
           <Route path="research" element={<Research />} />
+          <Route path="international" element={<International />} />
         </Route>
       </Routes>
+
     </Router>
   );
 }

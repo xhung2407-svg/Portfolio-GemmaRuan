@@ -23,8 +23,11 @@ const Header = () => {
       } else if (sectionId === 'research') {
         navigate('/research');
         window.scrollTo(0, 0);
+      } else if (sectionId === 'international') {
+        navigate('/international');
+        window.scrollTo(0, 0);
       } else {
-        // For sections without dedicated pages (international, scholarship), go to homepage and scroll
+        // For sections without dedicated pages (scholarship), go to homepage and scroll
         navigate('/');
         setTimeout(() => {
           const element = document.getElementById(sectionId);

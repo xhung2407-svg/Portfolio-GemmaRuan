@@ -28,10 +28,15 @@ const Research = () => {
                                     </p>
                                 </div>
                                 <div className="pt-6 border-t border-white/10">
-                                    <button className="w-full bg-primary hover:bg-blue-600 text-white font-bold h-12 rounded-xl transition-colors flex items-center justify-center gap-2 group/btn">
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-full bg-primary hover:bg-blue-600 text-white font-bold h-12 rounded-xl transition-colors flex items-center justify-center gap-2 group/btn"
+                                    >
                                         <span>Read Case Study</span>
                                         <span className="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

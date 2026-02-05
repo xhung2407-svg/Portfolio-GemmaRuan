@@ -19,6 +19,7 @@ export default {
         "background-light": "#f6f7f8",
         "background-dark": "#111921",
         accent: "#ec4899",
+        "accent-gold": "#D4AF37",
       },
       fontFamily: {
         display: ["Plus Jakarta Sans", "Manrope", "sans-serif"],

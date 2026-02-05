@@ -20,7 +20,8 @@ const Achievements = () => {
       title: "International",
       description: "Actively contributed to international programs, achieving notable accomplishments through dedication, initiative, and meaningful engagement in cross-cultural and academic environments.",
       image: "/images/International.PNG",
-      id: "international"
+      id: "international",
+      link: "/international"
     },
     {
       title: "Scholarship",
