@@ -44,11 +44,11 @@ const Scholarship = () => {
 
                         {/* Right Column: Image */}
                         <div className="flex-1 w-full md:max-w-md">
-                            <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white dark:border-slate-700">
+                            <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white dark:border-slate-700 bg-gray-50 dark:bg-slate-800">
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
                         </div>

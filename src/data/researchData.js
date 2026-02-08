@@ -3,7 +3,7 @@ export const research = [
         title: "IEDE 2025 Autumn Project – Tsinghua University",
         description: "Lead Author; supervised by Professor Kris Singh. Conducted a FinTech-oriented research project within the context of the digital economy and artificial intelligence (AI); identified research gaps and developed the research framework. Authored the Methodology section, employing a Bayesian Instrumental Variables (IV) model, and contributed to Results, Discussion, Conclusion, and Policy Implications. Successfully completed the project, received a letter of recommendation from the supervising faculty member, and achieved publication in the conference proceedings of the 8th ICFAA 2025 International Conference.",
         image: "/images/IEDE.png",
-        link: "https://drive.google.com/file/d/1hhlsvkeS4AciZs85tbr5DCM0mo1DJnEq/view?usp=sharing",
+        link: "https://drive.google.com/file/d/18FfWMVlbT2nWq_Y3J4qxt7FclZWBOdQg/view?usp=sharing",
         style: { backgroundPosition: 'center 1%' }
     },
     {
@@ -35,6 +35,13 @@ export const research = [
         description: "Co-author & Corresponding Author|||Bayesian analysis of green economic growth and financial development across 71 countries (2000–2021), providing empirical evidence for sustainable development strategies and green transition policies.",
         image: "/images/ACBSP.jpg",
         link: "#",
+        style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
+    },
+    {
+        title: "ICFAA 2025 (The International Conference on Finance, Accounting and Auditing 2025)",
+        description: "First Author & Corresponding Author||| Analyzed how financial development and institutional quality reduce unemployment across 78 countries using a Bayesian IV approach, highlighting policy implications for Vietnam’s labor market and governance.",
+        image: "/images/ICFAA_2025.jpg",
+        link: "https://drive.google.com/file/d/1VOFPzMz-stHD9LYofSrJw7RnaHNQKENx/view?usp=sharing",
         style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
     },
 ];
