@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
             <div>
-              <h4 className="text-2xl font-display font-extrabold">Nguyễn Đoàn Linh Châu</h4>
+              <h4 className="text-2xl font-display font-extrabold">Nguyen Doan Linh Chau</h4>
               <p className="text-slate-500 italic mt-2">"Opportunity comes only to those who are prepared."</p>
             </div>
             <div className="flex space-x-4">

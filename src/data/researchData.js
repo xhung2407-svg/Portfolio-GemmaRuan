@@ -23,7 +23,8 @@ export const research = [
         title: "Student Scientific Research Conference – Banking Academy (2025–2026)",
         description: "Lead Author. Examined financial inclusion for women entrepreneurs in Vietnam from the perspectives of sustainable finance and gender equality; clarified the role of microfinance and FinTech in narrowing the gender gap, while identifying barriers related to digital capability and financial literacy, thereby proposing policy recommendations aimed at sustainable development.",
         image: "/images/BAV.png",
-        link: "https://drive.google.com/file/d/16AL8rx99IVsrDHF203rK8lBgKnQpbO-q/view?usp=sharing"
+        link: "https://drive.google.com/file/d/16AL8rx99IVsrDHF203rK8lBgKnQpbO-q/view?usp=sharing",
+        style: { backgroundPosition: 'center 65%' }
     },
     {
         title: "Global Green Finance Research Competition (CUFE, China)",
