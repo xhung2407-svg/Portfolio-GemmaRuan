@@ -7,6 +7,13 @@ export const research = [
         style: { backgroundPosition: 'center 1%' }
     },
     {
+        title: "ICFAA 2025 (The International Conference on Finance, Accounting and Auditing 2025)",
+        description: "First Author & Corresponding Author||| Analyzed how financial development and institutional quality reduce unemployment across 78 countries using a Bayesian IV approach, highlighting policy implications for Vietnam’s labor market and governance.",
+        image: "/images/ICFAA_2025.jpg",
+        link: "https://drive.google.com/file/d/1VOFPzMz-stHD9LYofSrJw7RnaHNQKENx/view?usp=sharing",
+        style: { backgroundPosition: 'center top' }
+    },
+    {
         title: "The 2025 SJTU SDG July Camp – Shanghai Jiao Tong University",
         description: "Research Project Participant; supervised by Associate Professor Xin Tang. Conducted the research project “Bridging the Urban–Rural Education Gap: Impacts and Solutions for Students Aged 10–14 in Vietnam and China.” Responsible for identifying research gaps and developing the project outline, with a focus on analyzing urban–rural educational inequalities and designing solution-oriented approaches within a sustainable development context.",
         image: "/images/SDG.jpg",
@@ -35,13 +42,6 @@ export const research = [
         description: "Co-author & Corresponding Author|||Bayesian analysis of green economic growth and financial development across 71 countries (2000–2021), providing empirical evidence for sustainable development strategies and green transition policies.",
         image: "/images/ACBSP.jpg",
         link: "#",
-        style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
-    },
-    {
-        title: "ICFAA 2025 (The International Conference on Finance, Accounting and Auditing 2025)",
-        description: "First Author & Corresponding Author||| Analyzed how financial development and institutional quality reduce unemployment across 78 countries using a Bayesian IV approach, highlighting policy implications for Vietnam’s labor market and governance.",
-        image: "/images/ICFAA_2025.jpg",
-        link: "https://drive.google.com/file/d/1VOFPzMz-stHD9LYofSrJw7RnaHNQKENx/view?usp=sharing",
         style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
     },
 ];
