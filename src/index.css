@@ -7,6 +7,10 @@ body {
   min-height: max(884px, 100dvh);
   /* Use solid background to prevent paint smearing */
   background-color: #f6f7f8;
+  background-image: url('/images/2.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100;
 }
 

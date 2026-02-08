@@ -6,18 +6,18 @@ const Scholarship = () => {
         <div className="min-h-screen bg-background-light dark:bg-background-dark">
             {/* Hero Section */}
             <section className="relative bg-primary dark:bg-slate-900 py-16 px-6 overflow-hidden">
-                <div className="absolute inset-0 opacity-8" style={{
-                    backgroundImage: 'url(https://lh3.googleusercontent.com/aida-public/AB6AXuDEmKUFzcdQ_FM4gzLpWkQJGZz2Sl9gudyk41KThcj9wAZuYy-BPqNDomKrPlR5OvHk0V4cl2iNDBaHvyPn9w6qiizH4TdWbVu_3clu7I1qQIJOF3TVovs6ZY_UXMUboNACFUEPQn2c0QPHnXSRk9Rk973RnDVbPsrBWnmDHx8yeq8xyBZ6NN8NhL3cn-5uede4kSPzopbsJ8s_iIrLjxosmrKuKQ2NGjSnVa230BPqD9xZ6Y9OVBNj79zfvt6VsBNRMOPvdatB_dI)',
+                <div className="absolute inset-0" style={{
+                    backgroundImage: 'url(/images/4.png)',
                     backgroundSize: 'cover',
-                    opacity: 0.08,
+                    backgroundPosition: 'center',
                     pointerEvents: 'none'
                 }}></div>
                 <div className="relative z-10 text-center max-w-4xl mx-auto">
-                    <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-2">
+                    <h1 className="text-slate-900 text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-2">
                         Scholarship
                     </h1>
                     <div className="h-1 w-16 bg-accent-gold mx-auto rounded-full"></div>
-                    <p className="text-white/80 text-sm md:text-base mt-4 font-light max-w-xl mx-auto">
+                    <p className="text-slate-700 text-sm md:text-base mt-4 font-light max-w-xl mx-auto">
                         Academic excellence and recognition
                     </p>
                 </div>

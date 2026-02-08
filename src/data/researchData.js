@@ -2,8 +2,9 @@ export const research = [
     {
         title: "IEDE 2025 Autumn Project – Tsinghua University",
         description: "Lead Author; supervised by Professor Kris Singh. Conducted a FinTech-oriented research project within the context of the digital economy and artificial intelligence (AI); identified research gaps and developed the research framework. Authored the Methodology section, employing a Bayesian Instrumental Variables (IV) model, and contributed to Results, Discussion, Conclusion, and Policy Implications. Successfully completed the project, received a letter of recommendation from the supervising faculty member, and achieved publication in the conference proceedings of the 8th ICFAA 2025 International Conference.",
-        image: "/images/ICFAA_2025.jpg",
-        link: "https://drive.google.com/file/d/1VOFPzMz-stHD9LYofSrJw7RnaHNQKENx/view?usp=sharing"
+        image: "/images/IEDE.png",
+        link: "https://drive.google.com/file/d/1hhlsvkeS4AciZs85tbr5DCM0mo1DJnEq/view?usp=sharing",
+        style: { backgroundPosition: 'center 1%' }
     },
     {
         title: "The 2025 SJTU SDG July Camp – Shanghai Jiao Tong University",
@@ -19,7 +20,7 @@ export const research = [
     },
     {
         title: "Global Green Finance Research Competition (CUFE, China)",
-        description: "Team Leader; supervised by Dr. Tran Trung Kien. Investigated the interactive effects of financial development and environmental policy stringency on consumption-based CO₂ emissions across G20 economies (2000–2020). Responsible for conducting the literature review, developing the theoretical foundation and research framework, and applying Method of Moments Quantile Regression (MMQR) to examine heterogeneous effects across emission quantiles.",
+        description: "Team Leader; supervised by Dr. Tran Trung Kien.||| Investigated the interactive effects of financial development and environmental policy stringency on consumption-based CO₂ emissions across G20 economies (2000–2020). Responsible for conducting the literature review, developing the theoretical foundation and research framework, and applying Method of Moments Quantile Regression (MMQR) to examine heterogeneous effects across emission quantiles.",
         image: "/images/Nine_Green.jpg",
         link: "https://drive.google.com/file/d/1i5hE1A2dbV1xR-_IkrY6WrnYaF7UvVhN/view?usp=sharing"
     },
@@ -27,6 +28,13 @@ export const research = [
         title: "Scientific Conference on Human Resource Training for the Digital Economy – Foreign Trade University (FTU)",
         description: "Student Researcher. Participated in the research project “Digital Skills Training for Civil Servants and Public Employees in the Context of Administrative Streamlining and Digital Transformation in Vietnam”, under the ministerial-level project B2024-NTH-01. Responsible for analyzing the challenges faced by civil servants and public employees (CBCCVC) following administrative unit mergers, including declining work motivation, pressure to adapt, and career and psychological insecurity. Examined the relationship between digital skills training and work motivation, highlighting how digital training enhances perceived job security, expands career development opportunities, and improves the adaptability readiness of public-sector employees within the context of public-sector digital transformation.",
         image: "/images/Kinhteso.webp",
-        link: "#"
-    }
+        link: "https://drive.google.com/file/d/1L4C3UJDdPAI-HIufxw32VvNrBCONXDZh/view?usp=sharing"
+    },
+    {
+        title: "ACBSP Region 10 Conference",
+        description: "Co-author & Corresponding Author|||Bayesian analysis of green economic growth and financial development across 71 countries (2000–2021), providing empirical evidence for sustainable development strategies and green transition policies.",
+        image: "/images/ACBSP.jpg",
+        link: "#",
+        style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
+    },
 ];

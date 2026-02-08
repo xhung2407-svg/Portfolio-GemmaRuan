@@ -7,8 +7,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <Achievements />
       <News />
+      <Achievements />
     </>
   );
 }

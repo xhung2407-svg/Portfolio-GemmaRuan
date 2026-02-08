@@ -6,18 +6,18 @@ const Research = () => {
         <div className="min-h-screen bg-background-light dark:bg-background-dark">
             {/* Hero Section */}
             <section className="relative bg-primary dark:bg-slate-900 py-16 px-6 overflow-hidden">
-                <div className="absolute inset-0 opacity-8" style={{
-                    backgroundImage: 'url(https://lh3.googleusercontent.com/aida-public/AB6AXuDEmKUFzcdQ_FM4gzLpWkQJGZz2Sl9gudyk41KThcj9wAZuYy-BPqNDomKrPlR5OvHk0V4cl2iNDBaHvyPn9w6qiizH4TdWbVu_3clu7I1qQIJOF3TVovs6ZY_UXMUboNACFUEPQn2c0QPHnXSRk9Rk973RnDVbPsrBWnmDHx8yeq8xyBZ6NN8NhL3cn-5uede4kSPzopbsJ8s_iIrLjxosmrKuKQ2NGjSnVa230BPqD9xZ6Y9OVBNj79zfvt6VsBNRMOPvdatB_dI)',
+                <div className="absolute inset-0" style={{
+                    backgroundImage: 'url(/images/2.png)',
                     backgroundSize: 'cover',
-                    opacity: 0.08,
+                    backgroundPosition: 'center',
                     pointerEvents: 'none'
                 }}></div>
                 <div className="relative z-10 text-center max-w-4xl mx-auto">
-                    <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-2">
+                    <h1 className="text-slate-900 text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-2">
                         Research Projects
                     </h1>
                     <div className="h-1 w-16 bg-accent-gold mx-auto rounded-full"></div>
-                    <p className="text-white/80 text-sm md:text-base mt-4 font-light max-w-xl mx-auto">
+                    <p className="text-slate-700 text-sm md:text-base mt-4 font-light max-w-xl mx-auto">
                         Exploring the intersection of technology, human behavior, and design through rigorous academic and industry research.
                     </p>
                 </div>
@@ -35,16 +35,20 @@ const Research = () => {
 const ResearchItem = ({ item, index }) => {
     const [isExpanded, setIsExpanded] = React.useState(false);
 
-    // Helper to extract first sentence
+    // Helper to extract first sentence or use custom separator
     const getTruncatedDescription = (text) => {
+        const separator = '|||';
+        if (text.includes(separator)) {
+            return text.split(separator)[0];
+        }
         const dotIndex = text.indexOf('. ');
         if (dotIndex === -1) return text;
         return text.substring(0, dotIndex + 1);
     };
 
-    const fullDescription = item.description;
-    const truncatedDescription = getTruncatedDescription(fullDescription);
-    const hasMore = fullDescription.length > truncatedDescription.length;
+    const fullDescription = item.description.replace('|||', '');
+    const truncatedDescription = getTruncatedDescription(item.description);
+    const hasMore = item.description.length > truncatedDescription.length;
 
     return (
         <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl transition-all duration-300 hover:shadow-2xl">
@@ -52,7 +56,8 @@ const ResearchItem = ({ item, index }) => {
                 className="relative h-[480px] bg-cover bg-center-top transition-transform duration-500 group-hover:scale-105"
                 style={{
                     backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%), url("${item.image}")`,
-                    backgroundPosition: index === 2 ? 'center 65%' : 'center 30%'
+                    backgroundPosition: index === 2 ? 'center 65%' : 'center 30%',
+                    ...item.style // Allow overriding styles from data
                 }}
             >
                 <div className="absolute inset-0 flex flex-col justify-end p-8">

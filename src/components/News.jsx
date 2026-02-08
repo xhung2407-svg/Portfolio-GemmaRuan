@@ -2,11 +2,9 @@ import React from 'react';
 
 const News = () => {
   const newsItems = [
-    { text: "A" },
-    { text: "B" },
-    { text: "C" },
-    { text: "D" },
-    { text: "E" }
+    { text: "I enjoy working at the intersection of cultures, ideas, and emerging technologies, where dialogue becomes collaboration and diversity leads to innovation." },
+    { text: "Through research, startup initiatives, and international youth programs, I have learned to approach complex global issues with both analytical thinking and empathy." },
+    { text: "I value meaningful conversations, long-term partnerships, and actions that create shared impact beyond borders." },
   ];
 
   return (
@@ -31,8 +29,7 @@ const News = () => {
             </div>
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-display font-extrabold mb-2">Some news about me</h2>
-                <p className="text-primary font-medium italic text-sm tracking-wide">(Click to read more)</p>
+                <h2 className="text-3xl font-display font-extrabold mb-2">Some about me</h2>
               </div>
               <div className="space-y-6">
                 {newsItems.map((item, index) => (

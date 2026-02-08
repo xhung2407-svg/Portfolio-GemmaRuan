@@ -17,7 +17,7 @@ export const achievements = [
                 link: "https://drive.google.com/file/d/1-hpHYMunS-ugK1BuaY8LQ5jFtbkzVdG1/view?usp=sharing"
             }
         ],
-        image: "/images/GIC.jpg"
+        image: "/images/okara.png"
     },
     {
         title: "Vibely – An AI-powered personalized learning platform for programming education toward sustainable employment",
@@ -33,7 +33,7 @@ export const achievements = [
                 link: "https://drive.google.com/file/d/1j9CkdF-5xH-rIL0E6LMl7zHkLyLtBjEH/view?usp=sharing"
             }
         ],
-        image: "/images/GIC.jpg"
+        image: "/images/vibely.png"
     },
     {
         title: "I-ToolSys – IoT & SaaS solution for industrial tool management",
@@ -41,22 +41,17 @@ export const achievements = [
         description: "Led the business and strategic development of an IoT–SaaS startup aimed at modernizing industrial tool management in Vietnam’s mechanical manufacturing sector. Conducted market and customer demand analysis, developed the business model, pricing strategy, and financial plan, and designed the marketing strategy while performing risk analysis to demonstrate the project’s commercial feasibility and social impact.",
         externalRecognition: [
             {
-                text: "Coming soon",
+                text: "UNETI 2026 Student Innovation & Entrepreneurship Ideas",
                 link: "#"
             }
         ],
-        image: "/images/GIC.jpg"
+        image: "/images/I-ToolSys.png"
     },
     {
         title: "The 2nd IBS.BFSU “Future Business Elite” Global Case Contest,  Beijing Foreign Studies University (BFSU)",
         role: "Supervisor",
         description: "Mentored secondary school students in conducting the research project “AI Through the Eyes of Secondary School Students”, providing guidance on idea development, survey design, and data collection and analysis of 77 valid responses on AI usage.\n\nLed the team in finalizing the research presentation, contributing to the team’s advancement to the global finals.",
-        externalRecognition: [
-            {
-                text: "Coming soon",
-                link: "#"
-            }
-        ],
-        image: "/images/GIC.jpg"
+
+        image: "/images/bfsu.jpg"
     }
 ];
