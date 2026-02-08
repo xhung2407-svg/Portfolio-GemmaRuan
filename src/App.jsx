@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AchievementsDetail from './pages/AchievementsDetail';
 import Research from './pages/Research';
 import International from './pages/International';
+import Scholarship from './pages/Scholarship';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="achievements" element={<AchievementsDetail />} />
           <Route path="research" element={<Research />} />
           <Route path="international" element={<International />} />
+          <Route path="scholarship" element={<Scholarship />} />
         </Route>
       </Routes>
 

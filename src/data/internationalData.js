@@ -1,82 +1,62 @@
 export const summerPrograms = [
     {
-        period: "Summer 2023",
-        title: "International Summer School 2025 – Xi’an Jiaotong University (July–September 2025)",
-        subtitle: "Academic Summer Exchange",
+        title: "International Summer School 2025 – Xi'an Jiaotong University (July–September 2025)",
         description: "Participated in the Chinese Music Thematic Series, exploring traditional Chinese musical heritage through interdisciplinary lectures and cultural immersion activities.",
-        link: "https://drive.google.com/file/d/1Ax4HbHVHd6nHj2QbV6RO0o3yFmaLnd5J/view?usp=drive_link"
+        image: "/images/GIC.jpg"
     },
     {
-        period: "Spring 2023",
-        title: "English for Business and Entrepreneurship (July 7 – September 29, 2025)",
-        subtitle: "Diplomacy & Policy Course",
-        description: "Online professional course sponsored by the U.S. Department of State, focusing on business communication, entrepreneurial thinking, and global market practices.",
-        link: "https://drive.google.com/file/d/1jjPOsP_tL6hyNcuiHTBW4WOZKWJApAOo/view?usp=drive_link"
+        title: "English for Business and Entrepreneurship, funded by the U.S. Department of State",
+        description: "Completed an academic English course focused on business and entrepreneurship, covering market opportunity identification, business plan development, basic finance, and investor pitching. Achieved a perfect score of 143/143 across the entire assessment system.",
+        image: "/images/GIC.jpg"
     },
     {
-        period: "Summer 2022",
-        title: "2025 “Study Abroad at DUT – Gold Course Experience” Program, Dalian University of Technology, China (July–September 2025)",
-        subtitle: "Technology & Innovation Camp",
-        description: "Selected from thousands of global applicants, I participated in an elite pre-study experience program for outstanding international students, receiving intensive training in fundamental engineering disciplines (Mechanical Engineering, Physics, Chemistry, and Engineering Graphics) while engaging in Chinese cultural excellence modules such as Tea Ceremony, Calligraphy, and Traditional Opera, fostering strong intercultural competence and holistic academic development",
-        link: "https://drive.google.com/file/d/1UQup5xiS4Yq2_8q0zFq1rsujOZkhT0VZ/view?usp=drive_link"
+        title: '2025年度"留学大工预体验- 金课篇" - Dalian University of Technology (China)',
+        description: "A selective academic training program for international students, admitted through a highly competitive global selection process. Completed foundational technical modules, including Mechanical Engineering, Physics, Chemistry, and Engineering Graphics.",
+        image: "/images/GIC.jpg"
     }
 ];
 
 export const academicExchange = [
     {
-        period: "2022 - 2023",
-        title: "Participant, “Vietnam–China People-to-People Exchange Year 2025",
-        subtitle: "FTU Cooperation Events",
+        title: "Participant, 'Vietnam–China People-to-People Exchange Year 2025'",
         description: "Attended the official exchange program held at the Ho Chi Minh Museum, contributing to bilateral academic and cultural cooperation.",
-        link: "https://hanoionline.vn/video/sinh-vien-viet-trung-tham-quan-trien-lam-ve-bac-ho-293202.htm"
+        image: "/images/GIC.jpg"
     },
     {
-        period: "2022 - 2023",
-        title: "Organizing Support Member, Scientific Conference “University - Industry Cooperation in Chinese Language Human Resource Training” (March 2025)",
-        subtitle: "FTU Cooperation Events",
+        title: "Organizing Support Member, Scientific Conference 'University - Industry Cooperation in Chinese Language Human Resource Training' (March 2025)",
         description: "Assisted in coordination, academic logistics, and communication with speakers and partner institutions.",
-        link: "https://www.facebook.com/share/p/1MvFKxBLnW/?mibextid=wwXIfr"
+        image: "/images/GIC.jpg"
     },
     {
-        period: "2022 - 2023",
-        title: "Organizing Support Member,  Cooperation Meeting between Foreign Trade University (FTU) and Chinese Universities",
-        subtitle: "FTU Cooperation Events",
+        title: "Organizing Support Member, Cooperation Meeting between Foreign Trade University (FTU) and Chinese Universities",
         description: "Supported institutional dialogue and international partnership activities.",
-        link: "https://www.facebook.com/share/p/17R2ehcBtU/"
+        image: "/images/GIC.jpg"
     }
 ];
 
 export const chineseBridge = [
     {
-        period: "Cultural Representation",
-        title: "Performer & Recognized Participant, Chinese Bridge Spring Festival Gala 2026, Organized by Confucius Institute (Chinese Bridge Program)",
-        subtitle: "Gala Performance",
-        description: "Participated in the international cultural-artistic exchange program \"Chinese Bridge – Spring Festival Gala 2026\". Selected work was featured on the official Chinese Bridge website, contributing to the global promotion of the Chinese language and Lunar New Year culture.",
-        link: "https://drive.google.com/file/d/1smKkJkBoyH1ed02yo6TbmOjyXbuPi_Wc/view?usp=drive_link"
+        title: "“Chinese Bridge” Spring Festival Gala 2026",
+        description: "Participated in an international cultural exchange program organized by the Confucius Institute (Chinese Bridge, 汉语桥); selected work was featured on the official Chinese Bridge website.",
+        image: "/images/GIC.jpg"
     },
     {
-        period: "Cultural Representation",
-        title: "Participant, BIT Chinese Language and Multicultural Practice Online Program  Beijing Institute of Technology (January 5–14, 2026)",
-        subtitle: "Gala Performance",
-        description: "",
-        link: "https://drive.google.com/file/d/11lMqhbUTqTR_isgrn1Zy1_Exki7Z9Kjl/view?usp=drive_link"
+        title: "Chinese Language and Multicultural Practice,  Beijing Institute of Technology",
+        description: "Participated in an international online program involving English-medium instruction of Chinese language and culture, and multinational teamwork to develop and present cross-cultural content.",
+        image: "/images/GIC.jpg"
     }
 ];
 
 export const youthLeadership = {
-    period: "Social Impact",
-    title: "Youth Delegate, Youth-led Action Initiative (YAI) 2025–2026 – UNICEF",
-    subtitle: "Young Artists for Impact",
-    description: "Selected for a cascade peer-training model focusing on youth leadership, community action, mental health awareness, and social innovation development.",
-    link: "https://drive.google.com/file/d/1HlCq2_fyPmbzavsrdjZ9z-N14H0HS_Ei/view?usp=drive_link"
+    title: "Selected as a Youth Delegate for UNICEF’s “Youth-led Action Initiative (YAI) 2025–2026.”",
+    description: "Participated in a youth leadership development program based on a cascade training model, contributing to community initiative planning, team-based collaboration, solution design, and project proposal development and presentation within the program framework.",
+    image: "/images/GIC.jpg"
 };
 
 export const caseCompetitions = [
     {
-        period: "Competition",
-        title: "Instructor & Academic Supervisor, The 2nd IBS.BFSU “Future Business Elite” Global Case Contest for Secondary School Students",
-        subtitle: "International Business School",
-        description: "Research Project: “AI Through the Eyes of Secondary School Students",
-        link: "https://drive.google.com/file/d/1lQwpxsakIafJQhF87YCjDXM8aUusmSBf/view?usp=drive_link"
-    },
+        title: "Instructor & Academic Supervisor, The 2nd IBS.BFSU 'Future Business Elite' Global Case Contest for Secondary School Students",
+        description: "Research Project: 'AI Through the Eyes of Secondary School Students'",
+        image: "/images/GIC.jpg"
+    }
 ];

@@ -1,6 +1,34 @@
 import React from 'react';
 import { summerPrograms, academicExchange, chineseBridge, youthLeadership, caseCompetitions } from '../data/internationalData';
 
+const ProgramCard = ({ item, index }) => {
+    const isEven = index % 2 === 0;
+    return (
+        <div className={`flex flex-col md:flex-row gap-6 md:gap-10 items-center ${isEven ? '' : 'md:flex-row-reverse'}`}>
+            {/* Text Section */}
+            <div className="flex-1 space-y-3 text-center md:text-left">
+                <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-white leading-tight">
+                    {item.title}
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 md:text-lg leading-relaxed">
+                    {item.description}
+                </p>
+            </div>
+
+            {/* Image Section */}
+            <div className="flex-1 w-full">
+                <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white dark:border-slate-700">
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const International = () => {
     return (
         <div className="min-h-screen bg-background-light dark:bg-background-dark">
@@ -24,150 +52,76 @@ const International = () => {
             </section>
 
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-10 md:space-y-12">
+            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
                 {/* Summer & Academic Programs */}
-                <section id="summer-programs">
-                    <div className="flex items-center gap-2 mb-4 md:mb-6">
-                        <div className="p-2 bg-accent-gold/10 rounded-lg">
-                            <span className="material-symbols-outlined text-accent-gold">school</span>
+                <section id="summer-programs" className="space-y-10">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">school</span>
                         </div>
-                        <h2 className="text-lg md:text-xl font-bold text-primary dark:text-white">Summer & Academic Programs</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Summer & Academic Programs</h2>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-16">
                         {summerPrograms.map((program, index) => (
-                            <div key={index} className="bg-white dark:bg-slate-800 p-5 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
-                                <p className="text-accent-gold text-xs font-semibold uppercase tracking-widest mb-1">{program.period}</p>
-                                <h3 className="text-lg font-bold leading-tight mb-1 text-slate-900 dark:text-white">{program.title}</h3>
-                                <p className="text-primary dark:text-blue-400 text-sm font-medium mb-3">{program.subtitle}</p>
-                                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    {program.description}
-                                </p>
-                                <a
-                                    href={program.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full py-2 border border-accent-gold text-accent-gold rounded-lg text-sm font-semibold hover:bg-accent-gold hover:text-white transition-colors flex items-center justify-center"
-                                >
-                                    View Details
-                                </a>
-                            </div>
+                            <ProgramCard key={index} item={program} index={index} />
                         ))}
                     </div>
                 </section>
 
                 {/* Academic Exchange */}
-                <section id="exchange-diplomacy">
-                    <div className="flex items-center gap-2 mb-4 md:mb-6">
-                        <div className="p-2 bg-accent-gold/10 rounded-lg">
-                            <span className="material-symbols-outlined text-accent-gold">public</span>
+                <section id="exchange-diplomacy" className="space-y-10">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">public</span>
                         </div>
-                        <h2 className="text-lg md:text-xl font-bold text-primary dark:text-white">Academic Exchange</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Academic Exchange</h2>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-16">
                         {academicExchange.map((exchange, index) => (
-                            <div key={index} className="bg-white dark:bg-slate-800 p-5 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
-                                <p className="text-accent-gold text-xs font-semibold uppercase tracking-widest mb-1">{exchange.period}</p>
-                                <h3 className="text-lg font-bold leading-tight mb-1 text-slate-900 dark:text-white">{exchange.title}</h3>
-                                <p className="text-primary dark:text-blue-400 text-sm font-medium mb-3">{exchange.subtitle}</p>
-                                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    {exchange.description}
-                                </p>
-                                <a
-                                    href={exchange.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full py-2 border border-accent-gold text-accent-gold rounded-lg text-sm font-semibold hover:bg-accent-gold hover:text-white transition-colors flex items-center justify-center"
-                                >
-                                    View Details
-                                </a>
-                            </div>
+                            <ProgramCard key={index} item={exchange} index={index} />
                         ))}
                     </div>
                 </section>
 
                 {/* Chinese Bridge */}
-                <section id="chinese-bridge">
-                    <div className="flex items-center gap-2 mb-4 md:mb-6">
-                        <div className="p-2 bg-accent-gold/10 rounded-lg">
-                            <span className="material-symbols-outlined text-accent-gold">air</span>
+                <section id="chinese-bridge" className="space-y-10">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">air</span>
                         </div>
-                        <h2 className="text-lg md:text-xl font-bold text-primary dark:text-white">Chinese Bridge</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Chinese Bridge</h2>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-16">
                         {chineseBridge.map((item, index) => (
-                            <div key={index} className="bg-white dark:bg-slate-800 p-5 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
-                                <p className="text-accent-gold text-xs font-semibold uppercase tracking-widest mb-1">{item.period}</p>
-                                <h3 className="text-lg font-bold leading-tight mb-1 text-slate-900 dark:text-white">{item.title}</h3>
-                                <p className="text-primary dark:text-blue-400 text-sm font-medium mb-3">{item.subtitle}</p>
-                                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    {item.description}
-                                </p>
-                                <a
-                                    href={item.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full py-2 border border-accent-gold text-accent-gold rounded-lg text-sm font-semibold hover:bg-accent-gold hover:text-white transition-colors flex items-center justify-center"
-                                >
-                                    View Details
-                                </a>
-                            </div>
+                            <ProgramCard key={index} item={item} index={index} />
                         ))}
                     </div>
                 </section>
 
-
                 {/* Youth Leadership */}
-                <section id="youth-leadership">
-                    <div className="flex items-center gap-2 mb-4 md:mb-6">
-                        <div className="p-2 bg-accent-gold/10 rounded-lg">
-                            <span className="material-symbols-outlined text-accent-gold">stars</span>
+                <section id="youth-leadership" className="space-y-10">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">stars</span>
                         </div>
-                        <h2 className="text-lg md:text-xl font-bold text-primary dark:text-white">Youth Leadership</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Youth Leadership</h2>
                     </div>
-                    <div className="bg-white dark:bg-slate-800 p-5 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
-                        <p className="text-accent-gold text-xs font-semibold uppercase tracking-widest mb-1">{youthLeadership.period}</p>
-                        <h3 className="text-lg font-bold leading-tight mb-1 text-slate-900 dark:text-white">{youthLeadership.title}</h3>
-                        <p className="text-primary dark:text-blue-400 text-sm font-medium mb-3">{youthLeadership.subtitle}</p>
-                        <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                            {youthLeadership.description}
-                        </p>
-                        <a
-                            href={youthLeadership.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full py-2 border border-accent-gold text-accent-gold rounded-lg text-sm font-semibold hover:bg-accent-gold hover:text-white transition-colors flex items-center justify-center"
-                        >
-                            View Impact Report
-                        </a>
+                    <div className="space-y-16">
+                        <ProgramCard item={youthLeadership} index={0} />
                     </div>
                 </section>
 
                 {/* Case Competition & Research */}
-                <section className="pb-10" id="case-competitions">
-                    <div className="flex items-center gap-2 mb-4 md:mb-6">
-                        <div className="p-2 bg-accent-gold/10 rounded-lg">
-                            <span className="material-symbols-outlined text-accent-gold">bar_chart</span>
+                <section id="case-competitions" className="space-y-10 pb-8">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">bar_chart</span>
                         </div>
-                        <h2 className="text-lg md:text-xl font-bold text-primary dark:text-white">Case Competition & Research</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Case Competition & Research</h2>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-16">
                         {caseCompetitions.map((competition, index) => (
-                            <div key={index} className="bg-white dark:bg-slate-800 p-5 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
-                                <p className="text-accent-gold text-xs font-semibold uppercase tracking-widest mb-1">{competition.period}</p>
-                                <h3 className="text-lg font-bold leading-tight mb-1 text-slate-900 dark:text-white">{competition.title}</h3>
-                                <p className="text-primary dark:text-blue-400 text-sm font-medium mb-3">{competition.subtitle}</p>
-                                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    {competition.description}
-                                </p>
-                                <a
-                                    href={competition.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full py-2 border border-accent-gold text-accent-gold rounded-lg text-sm font-semibold hover:bg-accent-gold hover:text-white transition-colors flex items-center justify-center"
-                                >
-                                    {index === 0 ? 'View Project' : 'Read Abstract'}
-                                </a>
-                            </div>
+                            <ProgramCard key={index} item={competition} index={index} />
                         ))}
                     </div>
                 </section>

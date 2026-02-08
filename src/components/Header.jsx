@@ -26,6 +26,9 @@ const Header = () => {
       } else if (sectionId === 'international') {
         navigate('/international');
         window.scrollTo(0, 0);
+      } else if (sectionId === 'scholarship') {
+        navigate('/scholarship');
+        window.scrollTo(0, 0);
       } else {
         // For sections without dedicated pages (scholarship), go to homepage and scroll
         navigate('/');

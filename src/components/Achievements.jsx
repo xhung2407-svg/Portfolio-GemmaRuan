@@ -27,7 +27,8 @@ const Achievements = () => {
       title: "Scholarship",
       description: "Awarded multiple scholarships from both domestic and international institutions in recognition of academic excellence and sustained commitment to learning.",
       image: "/images/Scholarship.jpg",
-      id: "scholarship"
+      id: "scholarship",
+      link: "/scholarship"
     }
   ];
 
