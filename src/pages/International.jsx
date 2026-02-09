@@ -53,6 +53,21 @@ const International = () => {
 
             {/* Main Content */}
             <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+                {/* Youth Leadership */}
+                <section id="youth-leadership" className="space-y-10">
+                    <div className="flex items-center gap-3 justify-center md:justify-start">
+                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">stars</span>
+                        </div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Youth Leadership</h2>
+                    </div>
+                    <div className="space-y-16">
+                        {youthLeadership.map((item, index) => (
+                            <ProgramCard key={index} item={item} index={index} />
+                        ))}
+                    </div>
+                </section>
+
                 {/* Summer & Academic Programs */}
                 <section id="summer-programs" className="space-y-10">
                     <div className="flex items-center gap-3 justify-center md:justify-start">
@@ -64,21 +79,6 @@ const International = () => {
                     <div className="space-y-16">
                         {summerPrograms.map((program, index) => (
                             <ProgramCard key={index} item={program} index={index} />
-                        ))}
-                    </div>
-                </section>
-
-                {/* Academic Exchange */}
-                <section id="exchange-diplomacy" className="space-y-10">
-                    <div className="flex items-center gap-3 justify-center md:justify-start">
-                        <div className="p-2.5 bg-accent-gold/10 rounded-xl">
-                            <span className="material-symbols-outlined text-accent-gold text-3xl">public</span>
-                        </div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Social and Volunteer Activities</h2>
-                    </div>
-                    <div className="space-y-16">
-                        {academicExchange.map((exchange, index) => (
-                            <ProgramCard key={index} item={exchange} index={index} />
                         ))}
                     </div>
                 </section>
@@ -98,17 +98,17 @@ const International = () => {
                     </div>
                 </section>
 
-                {/* Youth Leadership */}
-                <section id="youth-leadership" className="space-y-10">
+                {/* Social and Volunteer Activities */}
+                <section id="exchange-diplomacy" className="space-y-10">
                     <div className="flex items-center gap-3 justify-center md:justify-start">
                         <div className="p-2.5 bg-accent-gold/10 rounded-xl">
-                            <span className="material-symbols-outlined text-accent-gold text-3xl">stars</span>
+                            <span className="material-symbols-outlined text-accent-gold text-3xl">public</span>
                         </div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Youth Leadership</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white">Social and Volunteer Activities</h2>
                     </div>
                     <div className="space-y-16">
-                        {youthLeadership.map((item, index) => (
-                            <ProgramCard key={index} item={item} index={index} />
+                        {academicExchange.map((exchange, index) => (
+                            <ProgramCard key={index} item={exchange} index={index} />
                         ))}
                     </div>
                 </section>

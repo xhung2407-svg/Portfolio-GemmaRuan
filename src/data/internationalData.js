@@ -18,6 +18,11 @@ export const summerPrograms = [
         title: "Chinese Language and Multicultural Practice,  Beijing Institute of Technology",
         description: "Participated in an international online program involving English-medium instruction of Chinese language and culture, and multinational teamwork to develop and present cross-cultural content.",
         image: "/images/Language.jpg"
+    },
+    {
+        title: "“Unique Beauty & Common Beauty” – 2023 BFSU China–Vietnam Youth Exchange Summer Camp",
+        description: "Successfully completed an international youth exchange program organized by the Office of Confucius Institutes at Beijing Foreign Studies University, focusing on Chinese language learning, intercultural dialogue, and China–Vietnam cultural exchange.",
+        image: "/images/IMG01.jpg"
     }
 ];
 
@@ -44,6 +49,21 @@ export const chineseBridge = [
         title: "“Chinese Bridge” Spring Festival Gala 2026",
         description: "Participated in an international cultural exchange program organized by the Confucius Institute (Chinese Bridge, 汉语桥); selected work was featured on the official Chinese Bridge website.",
         image: "/images/Bridge.jpg"
+    },
+    {
+        title: "“Chinese Bridge” Exchange Project – Dalian University of Technology (2023)",
+        description: "Participated in a 6-day international cultural exchange program on Chinese arts and culture, including traditional costume, architecture, calligraphy, painting, and Beijing Opera; awarded the Award for Excellence for outstanding performance.",
+        image: "/images/IMG_0117.PNG"
+    },
+    {
+        title: "“Chinese Bridge” Exchange Project – JUFE (2024)",
+        description: "Successfully completed the online cultural exchange program “Understanding Three Hundred Thousand via Chinese Bridge”, sponsored by the Center for Language Education and Cooperation (CLEC) and organized by Jiangxi University of Finance and Economics; awarded an official completion certificate.",
+        image: "/images/IMG_3180.PNG"
+    },
+    {
+        title: "“Chinese Bridge” Exchange Project – Hangzhou Normal University (2024)",
+        description: "Successfully completed a cultural and business exchange program “Thriving Business in Zhejiang,” organized by Hangzhou Normal University and sponsored by the Center for Language Education and Cooperation (CLEC), focusing on Zhejiang’s entrepreneurial ecosystem, digital economy, and industry practices.",
+        image: "/images/IMG.jpg"
     },
 ];
 
