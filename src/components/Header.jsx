@@ -46,10 +46,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white dark:bg-background-dark/95 border-b border-slate-100 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          <div className="flex-shrink-0 flex items-center space-x-2">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">L</div>
-              <span className="font-display font-extrabold text-xl tracking-tight hidden lg:block">Linh Chau</span>
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex items-center -ml-2">
+              <img src="/images/logo3.png" alt="Logo" className="h-24 md:h-32 w-auto object-contain transition-transform duration-300 hover:scale-110 drop-shadow-lg" />
             </Link>
           </div>
           <nav className="flex items-center space-x-4 md:space-x-8">
