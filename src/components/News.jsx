@@ -17,14 +17,13 @@ const News = () => {
               <img
                 alt="About me"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="/images/About-me.jpg"
+                src="/images/About.jpg"
                 onError={(e) => {
                   // Fallback to original image if local image not found
                   e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuD-2PKiBamoxYgc4rWUbZ7192DPVlE6l0526_jL45XQIafyfDlXR0AHqPlTqFXqXwcikwXwuB8X-UJ4-ffgD9dCUOSctiroaW-9MRmb3GnB58pxFpF7IAGXgysVU9HUrhvj4Cqu4jTPYfwXNO-B97oAdvkwSbMjIlNOHg3vg8XziHVjMbXn0PKQuY2WrvT6je0lCF2xQLErRm8lgYW59WpGixrNzjmfDEca9txbv4cPJ4RkKJ36Dc1-w8JkbKDrmr2YJWjHG6xAieQ";
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-                <p className="text-white font-medium text-lg">Inspiration for the journey ahead.</p>
               </div>
             </div>
             <div className="space-y-8">
