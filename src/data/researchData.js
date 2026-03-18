@@ -42,7 +42,7 @@ export const research = [
         title: "ACBSP Region 10 Conference",
         description: "Co-author & Corresponding Author|||Bayesian analysis of green economic growth and financial development across 71 countries (2000–2021), providing empirical evidence for sustainable development strategies and green transition policies.",
         image: "/images/ACBSP.jpg",
-        link: "#",
+        link: "https://drive.google.com/file/d/1pea2vhfbdKSpPN4Xw6Eh-UDky6apR3OX/view?usp=sharing",
         style: { backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f9fa' }
     },
 ];
