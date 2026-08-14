@@ -3,7 +3,7 @@ export const research = [
         title: "IEDE 2025 Autumn Project – Tsinghua University",
         description: "Lead Author; supervised by Professor Kris Singh. Conducted a FinTech-oriented research project within the context of the digital economy and artificial intelligence (AI); identified research gaps and developed the research framework. Authored the Methodology section, employing a Bayesian Instrumental Variables (IV) model, and contributed to Results, Discussion, Conclusion, and Policy Implications. Successfully completed the project, received a letter of recommendation from the supervising faculty member, and achieved publication in the conference proceedings of the 8th ICFAA 2025 International Conference.",
         image: "/images/IEDE.png",
-        link: "https://drive.google.com/file/d/18FfWMVlbT2nWq_Y3J4qxt7FclZWBOdQg/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1jqAoZQkUGvMEt44BgGo5OnvpnyhA8Rcy/view?usp=drivesdk",
         style: { backgroundPosition: 'center 1%' }
     },
     {
